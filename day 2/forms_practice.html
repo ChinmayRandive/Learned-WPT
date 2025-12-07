@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: bisque;
+            display: flex;
+        }
+        form{
+            text-align: center;
+            background-color:azure;
+            margin:auto;
+            border-radius: 10px;
+            max-width: 400px;
+            padding-bottom: 20px;
+            
+        }
+        h1{
+            color: burlywood;
+        }
+
+        button{
+            color: aqua;
+            background-color: black;
+            width: 350px;
+        }
+
+        box1{
+             text-align: center;
+             background-color:azure;
+             margin:auto;
+            max-width: 400px;
+               border-radius: 10px;
+              height: 250px;
+        }
+        p{
+            display: flex;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" onsubmit="event.preventDefault(); ShowData();">
+        <h1>Registration Form</h1>
+        <label for="name">Enter Your Full Name</label>
+        <input type="text" name="Fname" id="name" placeholder="Full Name"><br><br>
+        <label for="email">Enter Your Email</label>
+        <input type="email" name="email" id="email" placeholder="Email"><br><br>
+        <label for="mobile">Enter Your Contact Number</label>
+        <input type="text" name="mobile" id="mobile" placeholder="Number"><br><br>
+        <label for="gender">Select Your Gender</label>
+        <input type="radio" name="Gender" id="mgen" value="Male" required>male
+        <input type="radio" name="Gender" id="fgen" value="Female" required>female
+        <input type="radio" name="Gender" id="tgen" value="Transgender" required>transgender
+        <br><br>
+        <button type="submit">Show Data</button>
+    
+            </form><br><br>
+    <div class="box1"><br>
+        <h2>Display Form data</h2>
+        <p id="result1"></p>
+    </div>
+
+    <script>
+        function ShowData()
+        {
+            let Name = document.getElementById("name").value;
+            let Email = document.getElementById("email").value;
+            let Mobile = document.getElementById("mobile").value;
+            
+            let Gen = "";
+            if (document.getElementById("mgen").checked) {
+                Gen = document.getElementById("mgen").value;
+            } else if (document.getElementById("fgen").checked) {
+                Gen = document.getElementById("fgen").value;
+            } else if (document.getElementById("tgen").checked) {
+                Gen = document.getElementById("tgen").value;
+            }
+
+            let resultData = document.getElementById("result1");
+
+            resultData.innerHTML = `Your Name is ${Name} <br> Your Email is ${Email} <br> Your Mobile is ${Mobile} <br> Your Gender is ${Gen} <br>`
+        }
+    </script>
+    <p id="display"></p>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Multiple Images</title>
+  <link rel="stylesheet" href="./jalabi.css">
+</head>
+<body>
+  <h3>task2: change multiple img</h3>
+
+  <div class="image-box">
+    <img id="foodImage" src="/Images/basic_meal.jpeg" alt="image">
+  </div>
+  <p id="caption">Image</p>
+
+  
+  <div class="btn-container">
+    <button onclick="changeImage('vadapav.jpg','Vadapav')">Vadapav</button>
+    <button onclick="changeImage('samosa.jpg','Samosa')">Samosa</button>
+    <button onclick="changeImage('kachori.jpg','Kachori')">Kachori</button>
+  </div>
+
+  <script>
+    function changeImage(src, name) {
+      document.getElementById("foodImage").src = src;
+      document.getElementById("caption").innerText = name;
+    }
+  </script>
+</body>
+</html>

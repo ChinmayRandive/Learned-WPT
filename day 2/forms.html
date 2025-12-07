@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>User form</h1>
+    <!-- <marquee behavior="Hello Friends" direction="">Please Enter Your Details</marquee> -->
+    <form action="">
+         
+        <label for="Enter your full name">Full name</label>
+        <input type="text" name="Fname" id="name" placeholder="Enter your name" minlength="5" maxlength="20" pattern="^[a-zA-Z ]{3,20}$" required>
+        <br>
+        
+        <br>
+        <label for="txtpass">Enter Password</label>
+        <input type="password" name="pass" id="pass" placeholder="Enter your Password" minlength="5" maxlength="20" pattern="^[a-zA-Z ]{3,20}$" required>
+        <br><br>
+        <label for="email">Enter Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter Your Email">
+        <br><br>
+        <label for="number">Enter Number</label>
+        <input type="number" name="number" id="mobo" placeholder="Enter Your Number" pattern="^[789]\d{11}$" required>
+        <br><br>
+        <label for="">Enter DOB</label>
+        <input type="date" name="dob"  id="dobdate" required>
+        <br><br>
+        <label for="">Select Your Gender</label>
+        <input type="radio" name="Gender" id="mgen" value="Male" required>male
+        <input type="radio" name="Gender" id="fgen" value="Female" required>Female
+        <input type="radio" name="Gender" id="tgen" value="Transgender">Transgender
+         <br><br>
+
+         <label for="">Select Your Qualification</label>
+         <input type="checkbox" name="ccourse" id="dac" value="pgdac" required>pgdac
+         <input type="checkbox" name="ccourse" id="dbda" value="pgdbda" required>pgdbda
+         <input type="checkbox" name="ccourse" id="dmc" value="pgdmc"required>pgdmc
+         <input type="checkbox" name="ccourse" id="python" value="python" required>python
+         <br><br>
+        <!-- <label for="">Select Your course</label>
+        <select name="courses" id="">Multiple Required
+        <option value="Html" id="">Html</option>
+        <option value="java">java</option>
+        <option value="cpp">cpp</option>
+        <option value="angular">Angular</option>
+        </select> -->
+        <br 
+        <label for="">Course Fees</label>
+        <input type="text" name="fees" id="fees" value="100000" readonly disabled required>
+        <br><br>
+        <label for="">Upload Your Profile</label>
+        <input type="file" name="file" id="profile" accept="jpg,pdf,txt,img">
+        <br><br>
+        <button type="submit">submit</button>
+         
+    </form>
+    <p id="display"></p>
+<script>
+    let Name = document.getElementById("")
+</script>
+</body>
+</html>

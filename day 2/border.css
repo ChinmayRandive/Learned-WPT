@@ -1,0 +1,89 @@
+.border{
+        border: solid 10px seagreen;
+    padding: 10px 20px 30px;
+
+    background-color: darkkhaki;
+}
+
+
+.parent{
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+}
+.child{
+
+
+border-radius: 5px;
+border: 2px solid blue;
+height: 200px; 
+width: 200px;
+clear: left; 
+margin: 5px;
+background-color: aquamarine;
+ 
+}
+
+.logo{
+    border: 1px solid red;
+    width: 97px;
+    height: 98px;
+    border-radius: 50%;
+    box-shadow: 11px -1px 44px black;
+}
+
+.mytitle{
+    font-size: 40px;
+    font-weight: 700;
+    color: brown;
+    text-shadow: 3px 3px 3px;
+    margin: 0px 5px;
+}
+
+.header{
+    background-color: aquamarine;
+    border-bottom: 5px solid blue;
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}
+*{
+    box-sizing: border-box;
+}
+
+.border{
+    border: 2px solid red;
+    width: 20%;
+    float: left;
+}
+
+@media screen and (max-width:992px){
+    .border{
+        width: 25%;
+        background-color: aqua;
+    }
+    
+}
+@media screen and (max-width:768px){
+    .border{
+        width: 33%;
+        background-color: rgb(146, 30, 148);
+    }
+    
+}
+@media screen and (max-width:576px){
+    .border{
+        width: 50%;
+        background-color: rgb(75, 181, 26);
+    }
+    
+}
+
+@media screen and (max-width:450px){
+    .border{
+        width: 100%;
+        background-color: rgb(70, 183, 208);
+    }
+    
+}
+
